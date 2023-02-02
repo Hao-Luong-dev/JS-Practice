@@ -2,16 +2,17 @@ var d = new Date();
 var currentHour = d.getHours();
 
 hourMessage = document.getElementById("exercise3");
-if (currentHour > 0 && currentHour < 12) {
+if ((currentHour > 0) && (currentHour < 12)) {
    hourMessage.innerHTML = "Good morning!";
    hourMessage.style.color = "green";
    hourMessage.style.fontSize = "60px";
-} else if (currentHour < 18 && currentHour >= 12) {
+} else if ((currentHour < 18) && (currentHour >= 12)) {
    hourMessage.style.color = "red";
    hourMessage.style.fontSize = "60px";
    hourMessage.innerHTML = "Good afternoon!";
 } else {
-   hourMessage.style.color = "brown";
+   hourMessage.style.color = "blue";
    hourMessage.style.fontSize = "60px";
-   hourMessage.style.innerHTML = "Good evening!"
+   hourMessage.innerHTML = "Good evening!";
 }
+
